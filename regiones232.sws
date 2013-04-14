@@ -83,3 +83,13 @@ def region(l1,l2,mu1,mu2,mu3,nu1,nu2):
         for ly in rangoy:
             G+=line([(0,ly),(xmax,ly)],alpha=0.25,color="black")
         return G
+
+G=region(
+l1=15,
+l2=5,
+mu1=12,
+mu2=6,
+mu3=2,
+nu1=11,
+nu2=9)
+show(G)
