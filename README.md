@@ -1,0 +1,4 @@
+kronecker
+=========
+
+anotaciones sobre kronecker
