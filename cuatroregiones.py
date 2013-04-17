@@ -87,7 +87,7 @@ def regionP2(l1,l2,mu1,mu2,mu3,nu1,nu2):
         
         xmax = 10
         xmin=0
-        ymax=max(nu1-l2,nu1-mu3)+1
+        ymax=max(nu1-l2,(nu1-mu3)/2)+1
         ymin=mu3-1
         ymin=0
         
