@@ -213,4 +213,4 @@ def regiones(		 l1,l2,mu1,mu2,mu3,nu1,nu2):
 		show(Gb,aspect_ratio=1.0)
                 print "Transformada de P-barra:"
 		show(GbT,aspect_ratio=1.0)
-        show(G1,aspect_ratio=1.0)
+		show(G1,aspect_ratio=1.0)
