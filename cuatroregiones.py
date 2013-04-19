@@ -75,9 +75,9 @@ def regionP2(l1,l2,mu1,mu2,mu3,nu1,nu2):
 	rangox = range(xmin,xmax+1)
 	rangoy = range(ymin,ymax+1)
 	for lx in rangox:
-		G+=line([(lx,0),(lx,ymax)],alpha=0.25,color="black")
+		G+=line([(lx,ymin),(lx,ymax)],alpha=0.25,color="black")
 	for ly in rangoy:
-		G+=line([(0,ly),(xmax,ly)],alpha=0.25,color="black")
+		G+=line([(xmin,ly),(xmax,ly)],alpha=0.25,color="black")
 	return G
 
 def regionPbarra(l1,l2,mu1,mu2,mu3,nu1,nu2):
@@ -125,9 +125,9 @@ def regionPbarra(l1,l2,mu1,mu2,mu3,nu1,nu2):
 	rangox = range(xmin,xmax+1)
 	rangoy = range(ymin,ymax+1)
 	for lx in rangox:
-		G+=line([(lx,0),(lx,ymax)],alpha=0.25,color="black")
+		G+=line([(lx,ymin),(lx,ymax)],alpha=0.25,color="black")
 	for ly in rangoy:
-		G+=line([(0,ly),(xmax,ly)],alpha=0.25,color="black")
+		G+=line([(xmin,ly),(xmax,ly)],alpha=0.25,color="black")
 	return G
 
 def regionPbarraT(l1,l2,mu1,mu2,mu3,nu1,nu2):
@@ -139,7 +139,7 @@ def regionPbarraT(l1,l2,mu1,mu2,mu3,nu1,nu2):
 	s= min(mu3,nu1b/3)
 	q = min(nu1b+l1-mu1,nu1b+l2-mu2)
 	
-	xmax = 10 # mumu2+13+3
+	xmax = mu3+3
 	xmin=0
 	ymax=mu2+1
 	ymin=0
@@ -213,4 +213,4 @@ def regiones(		 l1,l2,mu1,mu2,mu3,nu1,nu2):
 		show(Gb,aspect_ratio=1.0)
                 print "Transformada de P-barra:"
 		show(GbT,aspect_ratio=1.0)
-		show(G1,aspect_ratio=1.0)
+                show(G1,aspect_ratio=1.0)
