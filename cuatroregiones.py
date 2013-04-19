@@ -1,6 +1,6 @@
 var('d,y,x')
 def kronecker(l,m,n):
-    s=SymmetricFunctionAlgebra(QQ,basis="schur")
+	s=SymmetricFunctionAlgebra(QQ,basis="schur")
 	sl=s(l)
 	sm=s(m)
 	sn=s(n)
